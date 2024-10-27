@@ -22,7 +22,7 @@ INSERT INTO petEvent VALUES
     ("Claws", "1998-03-17","birthday", "Gave him a new flea collar"),
     ("Whistler", "1998-12-09", "birthday", "First birthday")
     ('Fluffy', '2020-10-15', 'vet', 'antibiotics'),
-    ('Hammy','2020-10-15', 'vet', 'antibiotics');;
+    ('Hammy','2020-10-15', 'vet', 'antibiotics');
 
 
 UPDATE petEvent SET remark= '5 kittens, 2 male, 3 female'
@@ -31,8 +31,7 @@ WHERE petname = 'Fluffy' AND eventdate = '1995-05-15';
 UPDATE petEvent SET petname = 'Claws'
 WHERE petname = 'Slim' AND eventdate = '1997-08-03';
 
-UPDATE petPet
-SET death = '2020-09-01'
+UPDATE petPet SET death = '2020-09-01'
 WHERE petname = 'Puffball';
 
 DELETE FROM petEvent
